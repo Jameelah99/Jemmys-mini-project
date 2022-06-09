@@ -1,0 +1,88 @@
+/* resetting the browser default styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.heading{
+    margin: 10px 0px;
+}
+
+/* search box*/
+.section-search{
+   background-color: #5f4b8bff;
+   padding: 10px;
+}
+
+#search{
+ width: 100%;
+ padding: 12px 20px;
+ border: none;
+ font-size: 20px;
+}
+
+/* user list section*/
+.user-list-section{
+    margin-top: 20px;
+}
+
+li{
+    border: 1px solid #eeeeee;
+    margin-top: -1px; /* prevents double border*/
+    background-color: #e69a8dff;
+    font-size: 22px;
+    text-transform: capitalize;
+    padding: 12px;
+}   
+
+li:hover{
+    background-color: #85646438;
+}
+
+/* pill button for username*/
+.username{
+background-color:#5f4b8bff ;
+color: #ffffff;
+padding: 6px;
+font-size: 14px;
+border-radius: 5px;
+}
+
+
+/*media query for landscape*/
+/* my laptop screen is landscape of 900px*/
+@media (min-width: 1000px) {
+ body{
+     width: 50%;
+ }
+
+ li{
+     font-size: 18px;
+ }
+}
+
+/*media query for portrait*/
+@media (max-width: 700px) {
+    body{
+        width: 50%;
+    }
+
+    li{
+        font-size: 22px;
+    }
+}
+
+
